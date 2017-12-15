@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors List</title>
+</head>
+<body>
+    <h2>Authors List</h2>
+    <table border="1px">
+        <tr>
+            <th>Name</th>
+            <th>Count</th>
+        </tr>
+        {% for id in users %}  <!--conditional statements-->
+        <tr>
+            <td>{{users[id]['name']}}</td>
+            <td>{{users[id]['count']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
